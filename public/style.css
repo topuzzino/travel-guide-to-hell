@@ -231,6 +231,14 @@ header {
     color: #5c2381;
 }
 
+.chat-container {
+    background-color: #101456;
+}
+
+.chat-container .header-wrapper {
+    background-color: #1e2b93;
+}
+
 /* --------------- STYLES FOR MAIN CONTAINER --------------- */
 .main-container {
     width: 70%;
