@@ -1,0 +1,408 @@
+/*
+
+PRIMARY COLORS:
+violet: #5C2381;
+red: #d61a1b;
+
+SECONDARY
+green: #00797d;
+green-light: #a7c9ca;
+dark-blue: #101456;
+blue: #1e2b93;
+*/
+
+/* --------------- GENERAL STYLES --------------- */
+
+@font-face {
+    font-family: "faustantregular";
+    src: url("/fonts/faustant-webfont.woff2") format("woff2"),
+        url("/fonts/faustant-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "faustantregular", serif;
+    color: #d61a1b;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    align-self: end;
+    line-height: 1.5;
+}
+
+.visually-hidden {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+}
+
+/* --------------- HEADER --------------- */
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.header-wrapper {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 50%;
+    top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 60px 70px;
+    border-radius: 5px;
+    flex-wrap: wrap; /* for <h1> at the bottom */
+}
+
+.logo-container {
+    width: 90px;
+    height: 92px;
+    background-color: d61a1b;
+    position: relative;
+}
+
+.header-logo {
+}
+
+.header-link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: #d61a1b;
+}
+
+.navi {
+}
+
+.header-text {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 150px 100px;
+    margin: 0 0 0 auto;
+}
+
+.header-text p {
+    color: #fff;
+    margin: 0;
+    font-size: 20px;
+    line-height: 2.5;
+}
+
+/* --------------- COLOR STYLES FOR ALL COMPONENTS --------------- */
+.home-container {
+    background-color: #5c2381;
+}
+.home-container .header-wrapper {
+    background-color: #101456;
+}
+
+.home-container .header-wrapper::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 80px;
+    transform: rotate(90deg);
+    background-image: url("/img/monster.png");
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+
+    right: -90px;
+    bottom: 70px;
+}
+
+.history-container {
+    background-color: #fff; /* судя стрелочки вниз сунуть */
+    background: url("/img/arrows.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 600px;
+}
+
+.history-container .header-wrapper {
+    background-color: #5c2381;
+}
+
+.history-container .header-text p {
+    color: #5c2381;
+}
+
+.geography-container {
+    background-color: #fff; /* судя сунуть картинку на фон - карту */
+    background-image: url("img/map.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+}
+
+.geography-container .header-wrapper {
+    background-color: #d61a1b;
+}
+
+.geography-container h1 {
+    color: #5c2381;
+}
+
+.whatthehell-container {
+    background-color: #101456; /* судя картинку из химзавода сунуть на фон */
+    background-image: url("img/palast-dom.jpg");
+    background-repeat: no-no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+}
+
+.whatthehell-container .header-wrapper {
+    background-color: #00797d;
+}
+
+.whatthehell-container .header-wrapper::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 180px;
+    background-image: url("/img/snake.png");
+    background-repeat: no-repeat;
+    background-size: 80px auto;
+    left: 0;
+    bottom: 20px;
+}
+
+.wayback-container {
+    background-image: url("/img/entrance.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wayback-container .header-wrapper {
+    background-color: #fff;
+    background-image: url("/img/goldenzweig.jpg");
+    background-repeat: no-repeat;
+    color: #5c2381;
+}
+/*
+.wayback-container .header-wrapper::after {
+    position: absolute;
+    content: "";
+    width: 160px;
+
+    height: 99px;
+    background-image: url("/img/Michael.jpg");
+    background-repeat: no-repeat;
+    background-size: 160px auto;
+    right: 70px;
+    bottom: 0;
+}
+*/
+/* dark navigation links on light background */
+.wayback-container .header-link,
+.geography-container .header-link {
+    color: #5c2381;
+}
+
+/* --------------- STYLES FOR MAIN CONTAINER --------------- */
+.main-container {
+    width: 70%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-navi {
+    padding: 70px 0 50px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.second-navi ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.second-navi li {
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 1px dashed #00797d;
+    padding-bottom: 10px;
+}
+
+/* --------------- TIMELINE --------------- */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 40px 0;
+}
+
+..timeline-container::after {
+    background-color: #d61a1b;
+    content: "";
+    position: absolute;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 100%;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    position: relative;
+    margin: 10px 0;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.timeline-item-content {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+    position: relative;
+    width: 400px;
+    max-width: 70%;
+    text-align: right;
+}
+
+.timeline-item-content::after {
+    content: " ";
+    background-color: #fff;
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: -7.5px;
+    top: calc(50% - 7.5px);
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content::after {
+    right: auto;
+    left: -7.5px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item-content .tag {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    top: 5px;
+    left: 5px;
+    letter-spacing: 1px;
+    padding: 5px;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .tag {
+    left: auto;
+    right: 5px;
+}
+
+.timeline-item-content time {
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.timeline-item-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px 0;
+    max-width: 250px;
+}
+
+.timeline-item-content a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.timeline-item-content a::after {
+    content: " ►";
+    font-size: 12px;
+}
+
+.timeline-item-content .circle {
+    background-color: #fff;
+    border: 3px solid #e17b77;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -40px;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .circle {
+    right: auto;
+    left: -40px;
+}
+
+/* --------------- FOOTER --------------- */
+
+footer {
+    padding: 30px;
+    background-color: #101456;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 70px;
+    height: 78px;
+}

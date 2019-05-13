@@ -1,10 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./app";
 
-function HelloWorld() {
-    return (
-        <div>Hello, World!</div>
-    );
-}
+//import axios from "./axios";
 
-ReactDOM.render(<HelloWorld />, document.querySelector('main'));
+let elem;
+
+elem = <App />;
+
+ReactDOM.render(elem, document.querySelector("main"));

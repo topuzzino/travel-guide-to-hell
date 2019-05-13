@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <link
+            href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Chat with inhabitants</title>
+    </head>
+    <body>
+        <header class="header-index">
+            <div class="header-wrapper">
+                <div class="logo-container">
+                    <a class="header-logo" href="index.html">
+                        <img
+                            src="../public/img/logo-wordmark.svg"
+                            alt="Logo"
+                            width="90"
+                            height="auto"
+                        />
+                    </a>
+                </div>
+
+                <div class="navi">
+                    <a class="header-link" href="#" disabled> HOME </a>
+                    <a class="header-link" href="/history.html"> HISTORY </a>
+                    <a class="header-link" href="/geography.html">
+                        GEOGRAPHY
+                    </a>
+                    <a class="header-link" href="/dosanddonts.html">
+                        DO&apos;s AND DON&apos;Ts
+                    </a>
+                    <a class="header-link" href="/wayback.html"> WAY BACK </a>
+                </div>
+                <h1>Questions & Answers</h1>
+            </div>
+            <div class="header-text"><p>Chat rooms ....</p></div>
+        </header>
+        <main class="index-chat">
+            <div class="main-container">
+                <div class="second-navi">
+                    <ul>
+                        <li>what to pack</li>
+                        <li>money</li>
+                        <li>weather</li>
+                        <li>how to behave</li>
+                    </ul>
+                </div>
+                <div class="chatbubble">
+                    <div class="unexpanded">
+                        <div class="title">Chat with Support</div>
+                    </div>
+                    <div class="expanded chat-window">
+                        <div class="login-screen container">
+                            <form id="loginScreenForm">
+                                <div class="form-group">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="fullname"
+                                        placeholder="Name*"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="Email Address*"
+                                        required
+                                    />
+                                </div>
+                                <button
+                                    type="submit"
+                                    class="btn btn-block btn-primary"
+                                >
+                                    Start Chat
+                                </button>
+                            </form>
+                        </div>
+                        <div class="chats">
+                            <div class="loader-wrapper">
+                                <div class="loader">
+                                    <span>{</span><span>}</span>
+                                </div>
+                            </div>
+                            <ul class="messages clearfix"></ul>
+                            <div class="input">
+                                <form class="form-inline" id="messageSupport">
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            autocomplete="off"
+                                            class="form-control"
+                                            id="newMessage"
+                                            placeholder="Enter Message"
+                                        />
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary"
+                                    >
+                                        Send
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
