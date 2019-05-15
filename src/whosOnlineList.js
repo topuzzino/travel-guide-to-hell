@@ -44,15 +44,14 @@ class WhosOnlineListItem extends Component {
                 display: "flex",
                 alignItems: "center",
                 marginTop: 5,
-                marginBottom: 5,
-                paddingTop: 2,
-                paddingBottom: 2
+                marginBottom: 25,
+                fontSize: 20
             },
             div: {
                 borderRadius: "50%",
-                width: 11,
-                height: 11,
-                marginRight: 10
+                width: 20,
+                height: 20,
+                marginRight: 20
             }
         };
         return (
@@ -62,7 +61,7 @@ class WhosOnlineListItem extends Component {
                         ...styles.div,
                         backgroundColor:
                             this.props.presenceState === "online"
-                                ? "#539eff"
+                                ? "#00797d"
                                 : "#414756"
                     }}
                 />

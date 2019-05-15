@@ -6,12 +6,10 @@ import History from "./history";
 import Geography from "./geography";
 import Whatthehell from "./whatthehell";
 import Inhabitants from "./inhabitants";
-import Chat from "./chat";
 import Wayback from "./wayback";
 import Header from "./header";
 import Timeline from "./timeline";
 import Chat2 from "./chat2";
-//import AppChat from "./appchat";
 
 export default function App() {
     return (
@@ -22,9 +20,7 @@ export default function App() {
                 <Route path="/geography" component={Geography} />
                 <Route path="/whatthehell" component={Whatthehell} />
                 <Route path="/inhabitants" component={Inhabitants} />
-                <Route path="/chat" component={Chat} />
                 <Route path="/chat2" component={Chat2} />
-                {/*<Route path="/appchat" component={AppChat} />*/}
                 <Route path="/wayback" component={Wayback} />
             </div>
         </BrowserRouter>

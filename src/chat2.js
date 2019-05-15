@@ -3,7 +3,7 @@ import UsernameForm from "./usernameForm";
 import ChatScreen from "./ChatScreen";
 import Header from "./header";
 
-export default class Chat2 extends Component {
+export default class Chat extends Component {
     constructor() {
         super();
         this.state = {
@@ -31,11 +31,35 @@ export default class Chat2 extends Component {
     }
 
     render() {
-        console.log("this.state: ", this.state);
         if (this.state.currentScreen === "WhatIsYourUsernameScreen") {
             return (
                 <div className="chat-container">
-                    <Header />
+                    <Header
+                        titel={
+                            <h1>
+                                Chat <br />
+                                rooms
+                            </h1>
+                        }
+                        headertext={
+                            <div className="header-text">
+                                <p>
+                                    The last hell visitor was Dante Alighieri
+                                    from Florence, his visit is dated by Eastern
+                                    1300. Since the beginning of history there
+                                    were several visitor who managed to come
+                                    back, they are: <br />
+                                    Jesus, Lazarus, Orpheus, Sysiphos,
+                                    Gilgamesh, Dante, Hildegard von Bingen,
+                                    Svedenborg.
+                                </p>
+                                <p>
+                                    We give you the chance to ask them
+                                    everything that you are interested in.
+                                </p>
+                            </div>
+                        }
+                    />
                     <UsernameForm onSubmit={this.onUsernameSubmitted} />
                 </div>
             );

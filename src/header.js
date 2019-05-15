@@ -26,8 +26,8 @@ export default function Header(props) {
                     <Link className="header-link" to="/whatthehell">
                         WHAT THE HELL
                     </Link>
-                    <Link className="header-link" to="/wayback">
-                        TO HELL AND BACK
+                    <Link className="header-link" to="/chat2">
+                        CHAT
                     </Link>
                 </div>
                 {props.titel}

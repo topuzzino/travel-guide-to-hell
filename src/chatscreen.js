@@ -41,6 +41,7 @@ class ChatScreen extends Component {
         chatManager
             .connect()
             .then(currentUser => {
+                console.log("fire");
                 this.setState({ currentUser });
                 return currentUser.subscribeToRoom({
                     roomId: "19431699",
@@ -87,14 +88,14 @@ class ChatScreen extends Component {
                 flex: 1
             },
             whosOnlineListContainer: {
-                width: "300px",
+                width: "400px",
                 flex: "none",
-                padding: 20,
+                padding: 60,
                 backgroundColor: "#101456",
                 color: "white"
             },
             chatListContainer: {
-                padding: 20,
+                padding: 60,
                 width: "85%",
                 display: "flex",
                 flexDirection: "column"
@@ -102,7 +103,7 @@ class ChatScreen extends Component {
         };
 
         return (
-            <div style={styles.container}>
+            <div className="chatscreen-container" style={styles.container}>
                 <div style={styles.chatContainer}>
                     <aside style={styles.whosOnlineListContainer}>
                         <h2>Who is online</h2>
