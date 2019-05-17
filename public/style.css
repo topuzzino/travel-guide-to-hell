@@ -78,7 +78,7 @@ header {
     justify-content: space-between;
     padding: 70px 60px 70px;
     border-radius: 5px;
-    flex-wrap: wrap; /* for <h1> at the bottom */
+    flex-wrap: wrap;
 }
 
 .logo-container {
@@ -99,12 +99,33 @@ header {
     margin-left: 20px;
 }
 
+.header-link.active {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: -0.2em;
+    width: calc(100% + 0.6em);
+    z-index: -1;
+    height: 0.7em;
+    background: #d61a1b;
+    transition: all 0.3s ease;
+}
+
 .header-link:hover,
 .header-link:focus {
     color: #d61a1b;
 }
 
 .navi {
+    width: 400px;
+}
+
+.navi-text {
+    text-transform: none;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-top: 15px;
+    border-top: 1px solid #d61a1b;
 }
 
 .header-text {
@@ -119,6 +140,65 @@ header {
     margin: 0;
     font-size: 20px;
     line-height: 2.5;
+}
+
+/* --------------- STYLES FOR AUDIO --------------- */
+
+audio {
+}
+.player-container {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    content: "";
+    width: 270px;
+    height: 40px;
+    background-color: #5c2381;
+    border: 1px solid #d61a1b;
+}
+
+.audio-container {
+    z-index: 100;
+    position: absolute;
+    top: 60px;
+    left: 56%;
+    content: "";
+    width: 400px;
+    height: 20px;
+    display: flex;
+}
+
+#timeline {
+    width: 200px;
+    height: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #d61a1b;
+}
+
+#handle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: 2px;
+    background: rgba(0, 0, 0, 1);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.ion-play {
+    background-image: url("img/icon-play.svg");
+    background-repeat: no-repeat;
+}
+
+.ion-pause {
+    background-image: url("img/icon-pause.svg");
+    background-repeat: no-repeat;
 }
 
 /* --------------- COLOR STYLES FOR ALL COMPONENTS --------------- */
@@ -161,6 +241,7 @@ header {
 
 .history-container .second-navi {
     text-align: center;
+    cursor: default;
 }
 
 .geography-container {
@@ -169,6 +250,7 @@ header {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% auto;
+    background-attachment: fixed;
 }
 
 .geography-container .header-wrapper {
@@ -190,9 +272,14 @@ header {
 .whatthehell-container {
     background-color: #101456; /* судя картинку из химзавода сунуть на фон */
     background-image: url("img/palast-dom.jpg");
-    background-repeat: no-no-repeat;
-    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-position: center top;
     background-size: 100% auto;
+    background-attachment: fixed;
+}
+
+.whatthehell-container h1 {
+    color: #fff;
 }
 
 .whatthehell-container .header-wrapper {
@@ -207,8 +294,14 @@ header {
     background-image: url("/img/snake.png");
     background-repeat: no-repeat;
     background-size: 80px auto;
-    left: 0;
-    bottom: 20px;
+    right: 0;
+    bottom: 30%;
+    transform: rotate(180deg);
+}
+
+.whatthehell-container .main-container {
+    color: #fff;
+    background-color: #00797d;
 }
 
 .wayback-container {
@@ -251,6 +344,14 @@ header {
     background-color: #1e2b93;
 }
 
+.contact-container {
+    background-color: #000;
+}
+
+.contact-container .header-wrapper {
+    background-color: #1e2b93;
+}
+
 /* --------------- STYLES FOR MAIN CONTAINER --------------- */
 .main-container {
     width: 70%;
@@ -262,7 +363,6 @@ header {
 
 .second-navi {
     padding: 70px 0 50px;
-    cursor: pointer;
 }
 
 ul {
@@ -273,16 +373,19 @@ ul {
 
 .second-navi ul {
     display: flex;
-    justify-content: flex-end;
+    width: 700px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .second-navi li {
-    margin-right: 30px;
     text-transform: uppercase;
     font-size: 18px;
     color: #fff;
-    border-bottom: 1px dashed #00797d;
     padding-bottom: 10px;
+    width: 240px;
+    margin-bottom: 30px;
 }
 
 .main-content {
@@ -352,13 +455,13 @@ ul {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     background-color: #fff;
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 15px;
     position: relative;
-    width: 400px;
-    max-width: 70%;
+    max-width: 95%;
     text-align: right;
 }
 
@@ -412,7 +515,7 @@ ul {
     font-size: 16px;
     line-height: 24px;
     margin: 15px 0;
-    max-width: 350px;
+    max-width: 450px;
 }
 
 .timeline-item-content a {
@@ -1123,4 +1226,35 @@ footer {
 
 .rcw-link {
     font-size: 12px;
+}
+
+/* ------------- CONTACT FORM ------------- */
+.contact-form {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 150px 100px;
+    margin: 0 0 0 auto;
+    color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 70%;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid #d61a1b;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.contact-form #submit-button {
+    display: block;
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    background-color: #5c2381;
+    margin: 0 auto;
 }

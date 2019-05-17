@@ -34,20 +34,17 @@ export default function History() {
                             <div className="timeline-item-content">
                                 <time>From 300.000–200.000 to 40.000</time>
                                 <p>
-                                    <strong>Altsteinzeit</strong>
+                                    <strong>Paleolithic</strong>
                                     <br />
-                                    Mittelpaläolithikum
+                                    Middle Palaeolithic
                                 </p>
                                 <p>
-                                    Die ersten Einwohner bevölkerten das
-                                    Jenseits bereits im Mittelpaläolithikum. Sie
-                                    gehörten zu den Neandertalern - eine Art der
-                                    Gattung Homo. Die älteste bekannte Gruppe
-                                    von Einwanderer: besteht aus ca. 30
-                                    Menschen, gefunden in der Höhle Cueva-Mayor
-                                    in Sierra Atapuerca in Spanien. Laut
-                                    Ausgrabungen lebten die ersten Einwohner im
-                                    Jenseits ohne Kopf, aber mit Bären.
+                                    The first inhabitants populated the other
+                                    world in Middle Palaeolithic. They were
+                                    Neandertals - the oldest known population
+                                    group of migrants. According to excavations
+                                    the first inhabitants of the other world
+                                    lived there without head, but with bears.
                                 </p>
                                 <span className="circle" />
                             </div>
@@ -56,23 +53,19 @@ export default function History() {
                             <div className="timeline-item-content">
                                 <time>From 40.000 to 10.000</time>
                                 <p>
-                                    <strong>Altsteinzeit</strong>
+                                    <strong>Paleolithic</strong>
                                     <br />
-                                    Jungpaläolithikum
+                                    Upper Palaeolithic
                                 </p>
                                 <p>
-                                    Neandertaler verschwinden ca. 22.000 v. Chr.
-                                    Seit der Epoche des Jungpaläolithikums wurde
-                                    die Zuwanderung zahlreicher und das
-                                    kulturelle Leben und die Wirtschaft
-                                    umfangreicher. Adlige Verstorbene nahmen je
-                                    nach ihrer Beschäftigung während des Lebens
-                                    Werkzeuge, Steingeräte, Lanzen oder
-                                    Wurfspieße mit, um ihre Arbeit im Jenseits
-                                    fortzusetzen. Aber das wertvollste war
-                                    Schmuck. Zu der Zeit starben ca. 100.000
-                                    Menschen jährlich (allerdings ist diese
-                                    Information sehr kontrovers und ungefähr).
+                                    Neandertals disapeared approximately 22.000
+                                    BC. Since that time the immigration was
+                                    numerous, the cultural life and the
+                                    economics became extensive. VIP dead souls
+                                    took with them everything they got used:
+                                    instruments, armor or slaves to continue
+                                    their lifes afterwards. In that time
+                                    approximately 100.000 people died per year.
                                 </p>
                                 <span className="circle" />
                             </div>
@@ -81,14 +74,13 @@ export default function History() {
                             <div className="timeline-item-content">
                                 <time>From 10.000 to 8.000</time>
                                 <p>
-                                    <strong>Mittelsteinzeit</strong>
+                                    <strong>Middle stone age</strong>
                                 </p>
                                 <p>
-                                    Das Jenseits öffnete seine Türen nicht nur
-                                    für Adlige und Auserwählte, sondern auch für
-                                    die Mehrheit. Demokratisierungsprozess: die
-                                    Tendenz fing in der Mittelsteinzeit und
-                                    verbreitet in der Jungsteinzeit.
+                                    The other world oped it&apos;s doors not
+                                    only for aristocrats and VIP persons, but
+                                    also for the majority. Democratization
+                                    process starts in the middle stone age.
                                 </p>
                                 <span className="circle" />
                             </div>
@@ -97,16 +89,13 @@ export default function History() {
                             <div className="timeline-item-content">
                                 <time>From 8.000 to 5.000</time>
                                 <p>
-                                    <strong>Jungsteinzeit</strong>
+                                    <strong>Neolithic Age</strong>
                                 </p>
                                 <p>
-                                    Demokratische Explosion im Jenseits. In der
-                                    Jenseits-Welten von Ägypten, Mesopotamien
-                                    und China lief längst die Geschichte: die
-                                    ersten unterirdischen Staaten tauchten auf,
-                                    bürokratische Systeme entwickelten sich, die
-                                    Gerichte waren voll beschäftigt, die Gesetze
-                                    traten in Kraft.
+                                    Democratic explosion in Other World.
+                                    Bureaucratic system developed, the courts
+                                    were fully occupied, the laws came into
+                                    force.
                                 </p>
                                 <span className="circle" />
                             </div>
@@ -117,17 +106,14 @@ export default function History() {
                                     Regional different from 5.000–3.000 – 2.200
                                 </time>
                                 <p>
-                                    <strong>Kupfersteinzeit</strong>
+                                    <strong>Copper Age</strong>
                                 </p>
                                 <p>
-                                    Hades wurde von Christen erobert und
-                                    anschließend annektiert und weiterhin
-                                    funktionierte als Teil des christlichen
-                                    Jenseits, zusammen mit Fegefeuer und Himmel.
-                                    Himmel platzierte sich zuerst auf der Erde
-                                    (und zwar auf der Fläche von Eden in Asien)
-                                    und wurde einem bestimmten geografischen
-                                    Punkt zugeordnet.
+                                    Greek other world was conquert by
+                                    Christians, afterwards annexed and
+                                    futhermore functioned as a part of christian
+                                    hereafter, together with pergatory and
+                                    paradise.
                                 </p>
                                 <span className="circle" />
                             </div>
@@ -136,15 +122,13 @@ export default function History() {
                             <div className="timeline-item-content">
                                 <time>800 – 1 v.Ch</time>
                                 <p>
-                                    <strong>Eisenzeit & Frühgeschichte</strong>
+                                    <strong>Iron Age & Early History</strong>
                                 </p>
                                 <p>
-                                    Erst mit der irdischen Erfindung der
-                                    Gerichtsbarkeit (und vor allem mit der
-                                    Entdeckung ihrer Unzulänglichkeit)
-                                    etablierte man als Versprechen für gute
-                                    Taten das Paradies und als Drohmittel die
-                                    Strafhölle.
+                                    Only after the invention of the jurisdiction
+                                    the paradise were established as a promise
+                                    for good deeds and hell as a way of threaten
+                                    and punishment.
                                 </p>
                                 <span className="circle" />
                             </div>
@@ -156,13 +140,11 @@ export default function History() {
                                     <strong>Modern world</strong>
                                 </p>
                                 <p>
-                                    In einer globalisierten Welt gibt es
-                                    mittlerweile natürlich auch eine
-                                    globalisierte Hölle und ein globalisiertes
-                                    Paradies. Griechische Unterweltgötter sitzen
-                                    zusammen neben skandinavischen Walküren,
-                                    keltische und ägyptische Männer bewohnen
-                                    dieselben Jagdgründe.
+                                    In our modern world there is a globalised
+                                    hell and globalised paradise. Greek gods are
+                                    sitting together with scandinavic Valkyries,
+                                    celtic and egyptian men populate same
+                                    hunting places.
                                 </p>
                                 <span className="circle" />
                             </div>

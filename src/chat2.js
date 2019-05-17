@@ -35,12 +35,7 @@ export default class Chat extends Component {
             return (
                 <div className="chat-container">
                     <Header
-                        titel={
-                            <h1>
-                                Chat <br />
-                                rooms
-                            </h1>
-                        }
+                        titel={<h1>Chat room</h1>}
                         headertext={
                             <div className="header-text">
                                 <p>
