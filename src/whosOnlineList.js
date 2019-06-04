@@ -1,10 +1,16 @@
 import React, { Component } from "react";
+import WhosOnlineListItem from "./whosOnlineListItem";
 
 export default class WhosOnlineList extends Component {
     renderUsers() {
+        console.log("this.props.users: ", this.props.users);
         return (
             <ul>
                 {this.props.users.map((user, index) => {
+                    console.log(
+                        "user.presenceStore.Jesus: ",
+                        user.presenceStore.Jesus
+                    );
                     if (user.id === this.props.currentUser.id) {
                         return (
                             <WhosOnlineListItem
@@ -12,6 +18,16 @@ export default class WhosOnlineList extends Component {
                                 presenceState="online"
                             >
                                 {user.name} (You)
+                            </WhosOnlineListItem>
+                        );
+                    }
+                    if (user.name === "Dante") {
+                        return (
+                            <WhosOnlineListItem
+                                key={index}
+                                presenceState="online"
+                            >
+                                {user.name}
                             </WhosOnlineListItem>
                         );
                     }
@@ -34,39 +50,5 @@ export default class WhosOnlineList extends Component {
         } else {
             return <p>Loading...</p>;
         }
-    }
-}
-
-class WhosOnlineListItem extends Component {
-    render() {
-        const styles = {
-            li: {
-                display: "flex",
-                alignItems: "center",
-                marginTop: 5,
-                marginBottom: 25,
-                fontSize: 20
-            },
-            div: {
-                borderRadius: "50%",
-                width: 20,
-                height: 20,
-                marginRight: 20
-            }
-        };
-        return (
-            <li style={styles.li}>
-                <div
-                    style={{
-                        ...styles.div,
-                        backgroundColor:
-                            this.props.presenceState === "online"
-                                ? "#00797d"
-                                : "#414756"
-                    }}
-                />
-                {this.props.children}
-            </li>
-        );
     }
 }

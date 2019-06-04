@@ -18,17 +18,18 @@ export default class Player extends React.Component {
         });
     }
     positionHandle(position) {
+        var self = this;
         let timelineWidth = this.timeline.offsetWidth - this.handle.offsetWidth;
         let handleLeft = position - this.timeline.offsetLeft;
 
         if (handleLeft >= 0 && handleLeft <= timelineWidth) {
-            this.handle.style.marginLeft = handleLeft + "px";
+            self.handle.style.marginLeft = handleLeft + "px";
         }
         if (handleLeft < 0) {
-            this.handle.style.marginLeft = "0px";
+            self.handle.style.marginLeft = "0px";
         }
         if (handleLeft > timelineWidth) {
-            this.handle.style.marginLeft = timelineWidth + "px";
+            self.handle.style.marginLeft = timelineWidth + "px";
         }
     }
 
@@ -58,6 +59,7 @@ export default class Player extends React.Component {
         }
     }
     render() {
+        var self = this;
         return (
             <div className="audio-container">
                 <audio
@@ -75,9 +77,9 @@ export default class Player extends React.Component {
                 />
                 <div
                     id="timeline"
-                    onClick={this.mouseMove}
+                    onClick={self.mouseMove}
                     ref={timeline => {
-                        this.timeline = timeline;
+                        self.timeline = timeline;
                     }}
                 >
                     <div

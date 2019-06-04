@@ -4,6 +4,7 @@ import MessagesList from "./messageList";
 import SendMessageForm from "./sendMessageForm";
 import TypingIndicator from "./typingIndicator";
 import WhosOnlineList from "./whosOnlineList";
+import { Link } from "react-router-dom";
 
 class ChatScreen extends Component {
     constructor(props) {
@@ -92,7 +93,10 @@ class ChatScreen extends Component {
                 flex: "none",
                 padding: 60,
                 backgroundColor: "#101456",
-                color: "white"
+                color: "white",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between"
             },
             chatListContainer: {
                 padding: 60,
@@ -111,6 +115,9 @@ class ChatScreen extends Component {
                             currentUser={this.state.currentUser}
                             users={this.state.currentRoom.users}
                         />
+                        <Link className="back-home" to="/">
+                            BACK HOME
+                        </Link>
                     </aside>
                     <section style={styles.chatListContainer}>
                         <h2>Chat</h2>

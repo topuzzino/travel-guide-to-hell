@@ -15,9 +15,6 @@ export default class Home extends React.Component {
     render() {
         return (
             <div className="home-container">
-                {/*<audio id="player" autoPlay={true} loop={false} controls={true}>
-                    <source src="/music/gde_nas_net.mp3" type="audio/mpeg" />
-                </audio>*/}
                 <Player audio="/music/gde_nas_net.mp3" />
 
                 <Header

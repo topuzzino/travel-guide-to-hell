@@ -1258,3 +1258,16 @@ footer {
     background-color: #5c2381;
     margin: 0 auto;
 }
+
+.back-home {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #5c2381;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: auto;
+    width: 150px;
+    text-align: center;
+}
